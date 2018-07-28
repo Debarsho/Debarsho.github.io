@@ -3,53 +3,9 @@ layout: post
 title: You're up and running!
 published: true
 ---
----
-layout: post
-title: Internship experience at Egnify
----
 
-As this 8 week internship draws to a close, this post serves as a personal wrap-up to conclude everything for myself. Here I’ll go over what I did at the internship, and what I learnt from the experience.
+Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
 
+![_config.yml]({{ site.baseurl }}/images/config.png)
 
-##Company Background##
-
-![an image alt text](https://s3.amazonaws.com/revue/profile_covers/images/000/001/772/original/Header_1.jpg?1526287128 "Egnify Technologies")
-
-[Egnify Technologies](https://in.linkedin.com/company/egnify) is a cloud-based Assessment and Learning Analytics platform to enhance conceptual clarity and Exam Readiness of the student. It already has an Analysis Platform (let’s call it AP) which uses students’ exam data to help educational institutions understand weaknesses in teaching methods or students’ knowledge.
-
-Till now, AP used data that institutions would manually upload. Many helpful reports are generated from this (the most basic being the ranks of all students in a test), but AP is limited by the fact that all data must be explicitly provided by the user (a principal or teacher). What if we wanted to analyze how much time a student spent per subject in a test, or how many times a student came back to a certain question and wasted time on it? Generating reports like those is not feasible from the data an institution is expected to have.
-
-That's where the Test Platform (TP) comes in. Not only would it complement AP as a product, but the data generated from such a platform would be rich for more analysis!
-
-
-##A high level overview##
-
-I was a part of the backend team working on the TP. After the first week of training, we started developing the TP from scratch. Most of my time was spent writing APIs to serve data to the frontend, writing APIs to integrate TP with AP, and developing the task queue.
-
-AP was already built keeping [microservice architecture](http://microservices.io/) in mind, so TP would be built with the same philosophy. AP was also [Multitenant](https://en.wikipedia.org/wiki/Multitenancy), so TP was developed to be the same. Multitenancy essentially means that the application (say, AP) only needs one instance/deployment to cater to many customers/tenants (in this case, educational institutions).
-
-A significant part of this internship was the implementation of a background task queue. Until then, AP used [Google Cloud Functions](https://cloud.google.com/functions/) (similar to [AWS lambda](https://aws.amazon.com/lambda/)) for computationally heavy, “infinitely long” tasks. That is, tasks that were either forced to run for a long time, or could be executed later as they were not urgent. For example, generating analysis of a test could take a long time for (potentially) thousands of students. Google Cloud Functions have a time limit of only a few minutes for any one call, so when database interactions are factored in, they weren’t suited for many of the required time-taking operations.
-
-The solution was to implement another microservice - a task queue. Essentially, any other microservice (like the TP server) would be able to schedule tasks that weren’t urgent or were very heavy computations, and task queue would ensure that they eventually complete. In addition to solving the main problem that we needed to run some tasks for a long time, factors like the number of workers performing tasks in the queue (i.e. how many tasks were allowed to run parallely) could now be customized!
-
-
-##Technologies used and other details##
-
-The task queue was implemented using [Celery](http://www.celeryproject.org/) as the task queue and [Redis](https://redis.io/) as the broker.
-
-All microservices interacted with each other through REST APIs, and interacted with the frontend through GraphQL APIs. GraphQL was used over REST for frontend APIs to provide more structure, reduce network requests, prevent over/under fetching of data and cleanly handle errors. AP, TP and the task queue were all deployed through docker images on the Google Cloud Kubernetes engine.
-
-AP already used [MongoDB](https://www.mongodb.com/) with [Mongoose](http://mongoosejs.com/) (an industry standard), but [Google Cloud Datastore](https://cloud.google.com/datastore/) was used for TP’s database. The reason for this was that AP was expected to have a relatively steady volume of traffic, and could therefore be scaled manually as new customers signed up.
-TP, on the other hand, would have massive amounts of traffic at the start and end of tests. If a test for 10,000 students was scheduled to start at 2PM and end at 5PM, TP would be under huge load around those two times. Google Cloud Datastore is meant to automatically scale itself, that is why it was chosen.
-
-Multitenancy was implemented in AP by an internal process which closed inactive MongoDB connections. Each customer (an institution) would have its own database. It was easy to implement Multitenancy in TP with Google Cloud Datastore due to its feature of having namespaces.
-
-
-##What I learnt##
-
-Writing, fixing and refactoring production grade code is an experience that I had little experience in, and it is something that can’t be done as part of a course or research project. Making statements like “We need a task queue because it will scale better as we add more microservices” is a statement I could only make at an internship like this!
-
-Students that make open source contributions can probably relate to working on enormous production grade codebases, but it is different when there are two [sprint meetings]("https://en.wikipedia.org/wiki/Scrum_(software_development)") every day, where the CEO asks what has been/will be completed! These sprint meetings taught me a lot, like the fact that interacting with your manager is completely different from interacting with your senior engineer, which sounds obvious, but was a crucial practical lesson for me nonetheless.
-
-##Acknowledgements##
-Kiran Babu (CEO) and Nikhil Sharma (Program Manager) for making sure interns got as much out of the internship as possible, and Rahul Islam (Senior Backend Engineer) for guiding me through high level decisions and any other technical work.
+The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
