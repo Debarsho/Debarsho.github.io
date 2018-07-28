@@ -49,7 +49,7 @@ Multitenancy was implemented in AP by an internal process which closed inactive 
 
 Writing, fixing and refactoring production grade code is an experience that I had little experience in, and it is something that can’t be done as part of a course or research project. Making statements like “We need a task queue because it will scale better as we add more microservices” is a statement I could only make at an internship like this!
 
-Students that make open source contributions can probably relate to working on enormous production grade codebases, but it is different when there are two [sprint meetings](https://en.wikipedia.org/wiki/Scrum_(software_development)) every day, where the CEO asks what has been/will be completed! These sprint meetings taught me a lot, like the fact that interacting with your manager is completely different from interacting with your senior engineer, which sounds obvious, but was a crucial practical lesson for me nonetheless.
+Students that make open source contributions can probably relate to working on enormous production grade codebases, but it is different when there are two [sprint meetings]("https://en.wikipedia.org/wiki/Scrum_(software_development)") every day, where the CEO asks what has been/will be completed! These sprint meetings taught me a lot, like the fact that interacting with your manager is completely different from interacting with your senior engineer, which sounds obvious, but was a crucial practical lesson for me nonetheless.
 
 ##Acknowledgements##
 Kiran Babu (CEO) and Nikhil Sharma (Program Manager) for making sure interns got as much out of the internship as possible, and Rahul Islam (Senior Backend Engineer) for guiding me through high level decisions and any other technical work.
