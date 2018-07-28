@@ -2,14 +2,15 @@
 layout: page
 title: About
 permalink: /about/
+published: true
 ---
 
-Some information about you!
+I'm currently pursuing my B.E. in Computer Science and Engineering at BITS Pilani, Hyderabad campus.
 
-### More Information
+This blog is where I'll write about projects I've done or other experiences I've had.
 
-A place to include any other types of information that you'd like to include about yourself.
+[Linkedin](https://www.linkedin.com/in/vamsi-aribandi-104464126/)
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[aribandiv@gmail.com](mailto:email@domain.com)
