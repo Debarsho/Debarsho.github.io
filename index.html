@@ -13,10 +13,9 @@ layout: default
       </div>
        
       {% if post.excerpt contains '<!--break-->' %}
-         <a href="{{ post.url }}">read more</a>
+         <a href="{{ post.url }}">Read More</a>
       {% endif %}
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
   {% endfor %}
 </div>
