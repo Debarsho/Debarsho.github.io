@@ -14,7 +14,7 @@ In India, most traffic lights have preset timers to rotate through different pha
 
 
 ## Solution Overview
-I won’t go into much detail about Deep Q-learning, but a great introduction to it can be found [here](https://medium.com/@joshpatterson_5192/introduction-to-deep-q-learning-1bded90a6193). If you don’t understand terms like Q-values, rewards, state, etc. then you should probably have a look at it. This algorithm might be better suited for Traffic Management than traditional Machine Learning algorithm because of the fast adaptivity required.
+I won’t go into much detail about Deep Q-learning, but a great introduction to it can be found [here](https://medium.com/@joshpatterson_5192/introduction-to-deep-q-learning-1bded90a6193). If you don’t understand terms like Q-values, rewards, state, etc. then you should probably have a look at it. This approach might be better suited for Traffic Management compared to traditional Machine Learning algorithms because of the fast adaptivity required.
 
 The aim of this project is for a traffic light to determine the optimum time duration to cycle through traffic light phases, given the load at its junction. Each traffic light would be an agent. Given the traffic load (the number of vehicles) at each part of the junction and the current time duration, the traffic light would decide how to update the time duration. In a practical scenario, the load could be determined by cameras on top of the traffic lights, or induction loop traffic sensors.
 
@@ -44,6 +44,8 @@ The expected Q-value for our Neural Network was calculated using the Bellman Equ
 ![The Bellman Equation](https://cdn-images-1.medium.com/max/1250/1*jmcVWHHbzCxDc-irBy9JTw.png)
 
 In the Bellman Equation, values of 0.5, 0.97, and 5 were used for alpha, the discount rate, and the number of future steps too look forward to respectively. The value of the learning rate for the Neural Network (not to be confused with alpha from the Bellman equation) was 0.1.
+
+Three hidden layers of 64, 32 and 32 units were used, and Dropout with a rate of 0.2 was applied on the first 32 unit layer. The hyperbolic tangent function was used as the activation function for all hidden layers, and no activation function was used for the final output layer.
 
 
 ## Possible Improvements
