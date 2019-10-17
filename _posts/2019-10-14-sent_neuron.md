@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interesting papers I - "Learning to Generate Reviews and Discovering Sentiment"
+title: Interesting papers I - The Sentiment Neuron
 published: true
 ---
 
