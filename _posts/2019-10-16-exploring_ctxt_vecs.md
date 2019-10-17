@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interesting papers II - "Dissecting Contextual Word Embeddings: Architecture and Representation"
+title: title
 published: true
 ---
 
