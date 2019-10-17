@@ -16,10 +16,7 @@ The authors aim to study contextual representations learned by neural biLMs (ind
 
 ## Bidirectional language models
 
-### The Basics
 biLMs model the probability distribution of what word would be present in a blank given the sequence of words preceding and following the blank. To put it formally, they maximize the sum of log-likelihoods of language models (LMs) in forward and backward directions:
-
-$\sum_{k=1}^N \{log(p(t_k | t_1, t_2, ... t_{k-1})) + log(p(t_k | t_{k+1}, t_{k+2}, ... t_{N}))\}$
 
 Neural biLMs/LMs must use a context-insensitive word representation for their first layer (in this case, a [character-to-word encoder](https://arxiv.org/abs/1505.00387) and a Softmax layer as their final layer (so that the model outputs a probability distribution). In between, each hidden layer of state-of-the-art biLMs is the concatenation of the forward and backward LMs’ respective hidden states. The word embedding layer is fully connected to its next layer and the Softmax layer is fully connected to its preceding layer. However, in between, each hidden layer has separate weights for the forward and backward LM respectively. In other words, the forward LM updates half of the hidden neurons’ weights and the backward LM updates the other half during their respective backpropagation passes, but both LMs update the embedding and Softmax layers’ weights.
 
