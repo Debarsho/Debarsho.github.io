@@ -15,7 +15,7 @@ Contextual word representations from pre-trained bidirectional language models (
 $\sum_{k=1}^N \{log(p(t_k | t_1, t_2, ... t_{k-1})) + log(p(t_k | t_{k+1}, t_{k+2}, ... t_{N}))\}$
 
 The authors aim to study contextual representations learned by neural biLMs (independent of their architecture) to understand the patterns they learn, whether they contain hierarchies of features, and how effective they are at learning the structure of language.
-
+<!--
 ## Bidirectional language models
 
 biLMs model the probability distribution of what word would be present in a blank given the sequence of words preceding and following the blank. To put it formally, they maximize the sum of log-likelihoods of language models (LMs) in forward and backward directions:
@@ -57,3 +57,4 @@ The distribution of layers’ weights in the ELMo word embeddings (specific to e
 
 ## Personal Opinions
 As of writing this article, I have yet to come across a more interesting NLP paper. Maybe I am biased because it aligns closely with my research interests (as of now), but I greatly appreciate the motivation behind the study and the way the authors explained the results. The parts of the paper that I appreciate the most are those that illustrate how different layers of biLMs perform differently across NLP benchmark tasks and relate that to the hierarchy of features learned by biLMs.
+-->
