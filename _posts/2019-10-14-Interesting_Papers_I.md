@@ -4,7 +4,7 @@ title: Interesting papers I - "Learning to Generate Reviews and Discovering Sent
 published: true
 ---
 
-An overview of the paper “[Learning to Generate Reviews and Discovering Sentiment](https://arxiv.org/abs/1704.01444)”, by researchers at OpenAI. **Since the authors have already written a wonderful [blog post about the paper](https://openai.com/blog/unsupervised-sentiment-neuron/), this post is not a complete overview of their work** (I’ll still provide some background though). Rather, it serves to convey my thoughts and opinions about the paper.
+An overview of the paper “[Learning to Generate Reviews and Discovering Sentiment](https://arxiv.org/abs/1704.01444)”, by researchers at OpenAI. **Since the authors have already written a wonderful [blog post about the paper](https://openai.com/blog/unsupervised-sentiment-neuron/), this post is not a complete overview of their work**. Rather, it serves to convey my thoughts and opinions about the paper.
 
 <!--break-->
 
