@@ -4,9 +4,9 @@ title: Interesting papers I - "Learning to Generate Reviews and Discovering Sent
 published: true
 ---
 
-An overview of the paper “[Learning to Generate Reviews and Discovering Sentiment](https://arxiv.org/abs/1704.01444)”, by researchers at OpenAI. **Since the authors have already written a wonderful [blog post about the paper](https://openai.com/blog/unsupervised-sentiment-neuron/), this post is not a complete overview of their work**. Rather, it serves to convey my thoughts and opinions about the paper.
-
+An overview of the paper “[Learning to Generate Reviews and Discovering Sentiment](https://arxiv.org/abs/1704.01444)”, by researchers at OpenAI.
 <!--break-->
+**Since the authors have already written a wonderful [blog post about the paper](https://openai.com/blog/unsupervised-sentiment-neuron/), this post is not a complete overview of their work**. Rather, it serves to convey my thoughts and opinions about the paper.
 
 ## Paper Summary
 The authors trained a character-level RNN language model (i.e., a model that outputs a probability distribution of which character might come after a given chunk of text) on a corpus of Amazon reviews, and evaluated its learned representation for sentiment analysis. Here, the “representation” of any textual document refers to a vector of dimension 4096 that comes from the penultimate layer of the RNN language model. The study reports that a linear model trained on such representations of the [Stanford Sentiment Treebank](https://nlp.stanford.edu/sentiment/treebank.html) (using the language model trained on the Amazon reviews) performs better than most other state-of-the-art models. While this is a notable result that showcases the potential of unsupervised representation learning, it is not the most interesting part of the paper.
