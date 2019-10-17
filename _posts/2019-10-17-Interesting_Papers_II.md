@@ -15,6 +15,7 @@ Contextual word representations from pre-trained bidirectional language models (
 The authors aim to study contextual representations learned by neural biLMs (independent of their architecture) to understand the patterns they learn, whether they contain hierarchies of features, and how effective they are at learning the structure of language.
 
 ## Bidirectional language models
+
 ### The Basics
 biLMs model the probability distribution of what word would be present in a blank given the sequence of words preceding and following the blank. To put it formally, they maximize the sum of log-likelihoods of language models (LMs) in forward and backward directions:
 
