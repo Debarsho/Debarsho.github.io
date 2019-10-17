@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interesting Papers I - The Sentiment Neuron
+title: Interesting papers I - The Sentiment Neuron
 published: true
 ---
 
