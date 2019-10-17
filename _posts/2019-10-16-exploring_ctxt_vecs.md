@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interesting Papers II - Exploring Contextual Vectors
+title: Interesting Papers II - Exploring Contextual Word Vectors
 published: true
 ---
 
@@ -11,7 +11,7 @@ All images and tables in this post are from their paper.
 ## Motivation
 Contextual word representations from pre-trained bidirectional language models (biLMs) have recently shown to improve performance across various NLP tasks compared to word embeddings. However, the kind of patterns learned by biLMs and why they were so effective at representing words contextually had not been studied yet.
 
-$\sum_{k=1}^N \{log(p(t_k | t_1, t_2, ... t_{k-1})) + log(p(t_k | t_{k+1}, t_{k+2}, ... t_{N}))\}$
+$$\sum_{k=1}^N \{log(p(t_k | t_1, t_2, ... t_{k-1})) + log(p(t_k | t_{k+1}, t_{k+2}, ... t_{N}))\}$$
 
 The authors aim to study contextual representations learned by neural biLMs (independent of their architecture) to understand the patterns they learn, whether they contain hierarchies of features, and how effective they are at learning the structure of language.
 
