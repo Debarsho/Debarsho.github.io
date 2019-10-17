@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interesting papers II - "Dissecting Contextual Word Embeddings: Architecture and Representation"
+title: title
 published: true
 ---
 
@@ -8,7 +8,6 @@ An overview of the paper “[Dissecting Contextual Word Embeddings: Architecture
 <!--break-->
 All images and tables in this post are from their paper.
 
-<!--
 ## Motivation
 Contextual word representations from pre-trained bidirectional language models (biLMs) have recently shown to improve performance across various NLP tasks compared to word embeddings. However, the kind of patterns learned by biLMs and why they were so effective at representing words contextually had not been studied yet.
 
@@ -57,4 +56,3 @@ The distribution of layers’ weights in the ELMo word embeddings (specific to e
 
 ## Personal Opinions
 As of writing this article, I have yet to come across a more interesting NLP paper. Maybe I am biased because it aligns closely with my research interests (as of now), but I greatly appreciate the motivation behind the study and the way the authors explained the results. The parts of the paper that I appreciate the most are those that illustrate how different layers of biLMs perform differently across NLP benchmark tasks and relate that to the hierarchy of features learned by biLMs.
--->
