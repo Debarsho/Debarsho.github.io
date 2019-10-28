@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Intelligent Traffic Lights using Deep Q-Learning
+title: Intelligent Traffic Lights using Reinforcement Learning
 published: true
 ---
 A project that uses Deep Q-Learning to automate a simulated traffic system. The objective is to reduce the overall waiting time of vehicles at traffic lights.
