@@ -3,7 +3,7 @@ layout: post
 title: Toxic Comments on Wikipedia - Data Exploration and Classification
 published: true
 ---
-How I went about analyzing Wikipedia comments and their toxicity. **The Jupyter notebook can be found [here](https://github.com/vamsi-aribandi/kaggle_toxic_comment_challenge/blob/master/kaggle_toxic_comment_challenge.ipynb).**
+How I went about analyzing Wikipedia comments and their toxicity. **The Jupyter notebook can be found [here](https://nbviewer.jupyter.org/github/vamsi-aribandi/kaggle_toxic_comment_challenge/blob/master/kaggle_toxic_comment_challenge.ipynb).**
 <!--break-->
 
 ## Background
