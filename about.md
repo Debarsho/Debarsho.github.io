@@ -5,10 +5,11 @@ permalink: /about/
 published: true
 ---
 
-I'm currently pursuing my B.E. in Computer Science and Engineering at BITS Pilani, Hyderabad campus.
+My name is Vamsi Aribandi, and I'm a fourth year CS undergrad at BITS Pilani, Hyderabad campus.
+My research interests lie broadly in natural language processing and machine learning.
 
-This blog is where I'll write about projects I've done or other experiences I've had.
+I use this blog to write about research that interests me. Some of my earlier projects/experiences are also documented here.
 
 ### Contact me
 
-All relevant links are in the footer below.
+Relevant links are in the footer below.
