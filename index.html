@@ -1,21 +1,17 @@
 ---
-layout: default
+layout: page
+title: About
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<p>
+I am a fourth year CS undergrad at BITS Pilani, Hyderabad campus.
+My research interests lie broadly in natural language processing and machine learning.
+</p>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+<p>
+I also use this website to write about research that interests me. Some of my earlier projects and experiences are also documented here.
+</p>
 
-      <div class="entry">
-        {{ post.excerpt | split:'<!--break-->' | first }}
-      </div>
-       
-      {% if post.excerpt contains '<!--break-->' %}
-         <a href="{{ post.url }}">Read More</a>
-      {% endif %}
+<h3> Contact me </h3>
 
-    </article>
-  {% endfor %}
-</div>
+Relevant links are in the footer below.

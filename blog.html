@@ -1,0 +1,23 @@
+---
+layout: default
+permalink: /blog/
+---
+
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="post">
+
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+      <div class="entry">
+        {{ post.excerpt | split:'<!--break-->' | first }}
+      </div>
+       
+      {% if post.excerpt contains '<!--break-->' %}
+         <a href="{{ post.url }}">Read More</a>
+      {% endif %}
+
+    </article>
+  {% endfor %}
+</div>
+
