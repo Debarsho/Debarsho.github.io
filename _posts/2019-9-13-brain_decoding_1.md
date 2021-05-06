@@ -3,7 +3,7 @@ layout: post
 title: Brain Decoding - A Transductive Ensemble Learning approach
 published: true
 ---
-An approach to decoding MEG signals of the brain, involving stacked generalization and covariate shift. This project was done by Skanda Vaidyanath and I. The code can be found [here](https://github.com/vamsi-aribandi/brain_decoding_kaggle).
+An approach to decoding MEG signals of the brain, involving stacked generalization and covariate shift. This project was done by Skanda Vaidyanath, Sachin Panneer Selvam, and I. The code can be found [here](https://github.com/vamsi-aribandi/brain_decoding_kaggle).
 <!--break-->
 
 ## Introduction
