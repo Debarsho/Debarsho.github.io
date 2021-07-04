@@ -3,10 +3,10 @@
 #
 
 # Name of your site (displayed in the header)
-name: Vamsi Aribandi
+name: Debarsho Sannyasi
 
 # Short bio or description (displayed in the header)
-description: Google AI Resident 
+description: Final Year Undergraduate, Computer Science and Engineering, IIT Kanpur 
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/vamsi-aribandi/vamsi-aribandi.github.io/master/images/avatar.jpg
@@ -17,11 +17,11 @@ avatar: https://raw.githubusercontent.com/vamsi-aribandi/vamsi-aribandi.github.i
 
 # Includes an icon in the footer for each username you enter
 footer-links:
-  email: aribandiv@gmail.com
-  github: vamsi-aribandi
-  linkedin: vamsi-aribandi
+  email: riksannyasi@gmail.com
+  github: Debarsho
+  linkedin: Debarsho
   rss: # just type anything here for a working RSS icon
-  twitter: VAribandi
+  twitter: #
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
 
 
@@ -34,7 +34,7 @@ google_analytics:
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: vamsi-aribandi.github.io
+url: Debarsho.github.io
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
